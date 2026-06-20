@@ -1,0 +1,32 @@
+{
+  "name": "ai-error-fixer",
+  "displayName": "AI Error Fixer",
+  "description": "Captures runtime errors and uses AI to fix them automatically.",
+  "version": "0.1.0",
+  "publisher": "local-dev",
+
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+
+  "categories": ["Other", "Debuggers"],
+
+  "main": "./src/extension.js",
+
+  "activationEvents": [
+    "*"
+  ],
+
+  "contributes": {
+    "commands": [
+      {
+        "command": "aiErrorFixer.runCurrentFile",
+        "title": "AI Error Fixer: Run Current File"
+      },
+      {
+        "command": "aiErrorFixer.setToken",
+        "title": "AI Error Fixer: Set Token"
+      }
+    ]
+  }
+}
